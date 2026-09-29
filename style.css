@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5fff9;
+    color: #333;
+}
+
+/* Navigation */
+
+header {
+    background-color: #087f5b;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 25px;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b7f7df;
+}
+
+/* Hero */
+
+.hero {
+    height: 500px;
+
+    background:
+        linear-gradient(rgba(0, 80, 50, 0.55),
+        rgba(0, 80, 50, 0.55)),
+        url("images/healthy-food.jpg");
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 700px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #087f5b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #055f44;
+}
+/* Sections */
+section {
+    padding: 60px 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: #087f5b;
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+
+/* Cards */
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    color: #087f5b;
+    margin-bottom: 10px;
+}
+/* Images */
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.image-card {
+    width: 350px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.image-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.image-card h3 {
+    color: #087f5b;
+    margin: 15px 0 5px;
+}
+
+.image-card p {
+    padding: 0 20px 20px;
+}
+
+/* Tips */
+
+.tips-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.tip {
+    width: 400px;
+    background-color: white;
+    padding: 25px;
+    border-left: 5px solid #087f5b;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tip h3 {
+    color: #087f5b;
+    margin-bottom: 15px;
+}
+
+.tip ul {
+    padding-left: 20px;
+}
+
+/* Awareness */
+.awareness {
+    text-align: center;
+    background-color: #e2f7ed;
+}
+
+.awareness > p {
+    max-width: 800px;
+    margin: auto;
+}
+
+.awareness-box {
+    max-width: 700px;
+    margin: 30px auto 0;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+}
+.awareness-box h3 {
+    color: #087f5b;
+    margin-bottom: 10px;
+}
+/* Contact */
+#contact {
+    text-align: center;
+}
+form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+textarea {
+    height: 150px;
+    resize: none;
+}
+.learn-btn {
+    display: inline-block;
+    background-color: #087f5b;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.learn-btn:hover {
+    background-color: #055f44;
+}
+#formMessage {
+    margin-top: 15px;
+    color: #087f5b;
+    font-weight: bold;
+}
+/* Footer */
+
+footer {
+    background-color: #087f5b;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .hero h1 {
+        font-size: 35px;
+    }
+    .hero {
+        height: 400px;
+    }
+    section {
+        padding: 45px 5%;
+    }
+}
